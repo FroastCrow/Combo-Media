@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Combo Media</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/swiper-bundle.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-content">
+	<section class="hero-top">
+		<div class="hero-banner">
+			<div class="hero-banner__placeholder" style="background-image: url('img/card1.webp'); background-size: cover; background-position: center;"></div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="Combo Media logo">
+					</a>
+
+					<div class="overlay_top">
+						<div class="overlay_scroll">
+							<div class="only-mobile">
+								<div class="block-top-mob">
+									<a href="#" class="logo">
+										<img src="img/logo.svg" alt="Combo Media logo">
+									</a>
+									<div class="mob-icons-inners">
+										<button class="mob-icon mob-close" type="button" aria-label="Закрыть меню"></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="header-links">
+								<a href="#" class="btn btn-dark form_sign_in">Вход</a>
+								<a href="#" class="btn btn--gradient form_sign_up">Регистрация</a>
+							</div>
+
+							<div class="auth-modal__footer auth-modal__footer--single header-popup-footer">
+								<div class="auth-modal__copy">
+									<p>Combo.media © 2026</p>
+									<p>All rights reserved</p>
+								</div>
+								<div class="auth-modal__icons">
+									<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+									<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-actions">
+						<button type="button" class="header-search-toggle modal-search" aria-label="Открыть поиск"></button>
+						<button type="button" id="menu-toggle" aria-label="Открыть меню">
+							<span id="hamburger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="top-cta">
+			<div class="container">
+				<div class="top-cta__box">
+					<p class="top-cta__text"><span class="top-cta__lead">COMBO.CONF</span> УЖЕ СЕГОДНЯ</p>
+					<a href="#" class="btn btn--gradient top-cta__btn form_sign_up">Регистрация</a>
+					<button class="top-cta__close" type="button" aria-label="Закрыть плашку"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="ticker">
+			<div class="container">
+				<div class="ticker__slider">
+					<div class="ticker__track">
+						<div class="ticker__group">
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="main-wrapper">
+		<section class="main">
+			<div class="container">
+				<div class="content-layout">
+					<aside class="sidebar sidebar-left">
+						<nav class="side-menu">
+							<a href="#" class="side-menu__item side-menu__item--active side-menu__item--home"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon4.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon4-hover.svg" alt=""></span><span>Главная</span></a>
+							<a href="#" class="side-menu__item side-menu__item--news"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon2.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon2-hover.svg" alt=""></span><span>Новости</span></a>
+							<a href="#" class="side-menu__item side-menu__item--learn"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon1.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon1-hover.svg" alt=""></span><span>Обучение</span></a>
+							<a href="#" class="side-menu__item side-menu__item--conf"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon-hover.svg" alt=""></span><span>Combo.conf</span></a>
+							<a href="#" class="side-menu__item side-menu__item--articles"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon3.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon3-hover.svg" alt=""></span><span>Статьи</span></a>
+						</nav>
+
+						<div class="social-card">
+							<h3 class="social-card__title">Следи за нами в соцсетях</h3>
+							<div class="social-card__list">
+								<a href="#" class="social-card__icon" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+								<a href="#" class="social-card__icon" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+							</div>
+							<div class="social-card__copy">
+								<p>Combo.media</p>
+								<p>© All Rights Reserved</p>
+								<p>Copyright 2026</p>
+							</div>
+						</div>
+					</aside>
+
+					<div class="content-center">
+
+						<section class="content-section">
+							<div class="news-tabs" data-news-tabs>
+								<button class="news-tabs__button is-active" type="button" data-news-filter="all">Все новости</button>
+								<button class="news-tabs__button" type="button" data-news-filter="cases">Кейсы</button>
+								<button class="news-tabs__button" type="button" data-news-filter="offers">Офферы</button>
+								<button class="news-tabs__button" type="button" data-news-filter="nutra">Нутра</button>
+								<button class="news-tabs__button" type="button" data-news-filter="sources">Источники</button>
+								<button class="news-tabs__button" type="button" data-news-filter="conf">Combo.conf</button>
+								<button class="news-tabs__button" type="button" data-news-filter="learning">Обучение</button>
+							</div>
+							<div class="news-grid">
+								<a href="" class="news-card" data-category="cases">
+									<div class="news-card__inner">
+										<div class="news-card__media news-card__media--alt media-placeholder"><img src="img/back.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>evoproadvert30</span></p>
+											<div>Как NGR Partners заскамили Ace Partners на €3 000</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">170879</span>
+												<span class="stat stat--comments">1378</span>
+												<span class="stat stat--likes">11089</span>
+												<div class="news-card__date">12.01.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="offers">
+									<div class="news-card__inner">
+										<div class="news-card__media media-placeholder"><img src="img/back2.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>evoproadvert30</span></p>
+											<div>Как NGR Partners заскамили Ace Partners на €3 000</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">170879</span>
+												<span class="stat stat--comments">1378</span>
+												<span class="stat stat--likes">11089</span>
+												<div class="news-card__date">12.01.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="nutra">
+									<div class="news-card__inner">
+										<div class="news-card__media news-card__media--alt media-placeholder"><img src="img/back1.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>evoproadvert30</span></p>
+											<div>Как NGR Partners заскамили Ace Partners на €3 000</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">170879</span>
+												<span class="stat stat--comments">1378</span>
+												<span class="stat stat--likes">11089</span>
+												<div class="news-card__date">12.01.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a class="news-card" data-category="sources">
+									<div class="news-card__inner">
+										<div class="news-card__media media-placeholder"><img src="img/back.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>evoproadvert30</span></p>
+											<div>Как NGR Partners заскамили Ace Partners на €3 000</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">170879</span>
+												<span class="stat stat--comments">1378</span>
+												<span class="stat stat--likes">11089</span>
+												<div class="news-card__date">12.01.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="conf">
+									<div class="news-card__inner">
+										<div class="news-card__media news-card__media--alt media-placeholder"><img src="img/back1.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Combo Daily</span></p>
+											<div>Арбитражный рынок меняется быстрее, чем медиабаинг-команды успевают адаптироваться</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">98402</span>
+												<span class="stat stat--comments">214</span>
+												<span class="stat stat--likes">3876</span>
+												<div class="news-card__date">03.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="learning">
+									<div class="news-card__inner">
+										<div class="news-card__media media-placeholder"><img src="img/back2.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Affiliate Desk</span></p>
+											<div>Почему Telegram-воронки снова становятся главным источником прогрева аудитории</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">76190</span>
+												<span class="stat stat--comments">163</span>
+												<span class="stat stat--likes">2741</span>
+												<div class="news-card__date">08.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="cases">
+									<div class="news-card__inner">
+										<div class="news-card__media news-card__media--alt media-placeholder"><img src="img/back.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Combo Media</span></p>
+											<div>Что происходит с CPM в tier-1 и как это влияет на запуск новых офферов</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">84557</span>
+												<span class="stat stat--comments">187</span>
+												<span class="stat stat--likes">3024</span>
+												<div class="news-card__date">11.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="offers">
+									<div class="news-card__inner">
+										<div class="news-card__media media-placeholder"><img src="img/back2.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Traffic Notes</span></p>
+											<div>Какие вертикали показывают лучший ROI в начале квартала по данным команд</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">68931</span>
+												<span class="stat stat--comments">129</span>
+												<span class="stat stat--likes">2205</span>
+												<div class="news-card__date">14.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="nutra">
+									<div class="news-card__inner">
+										<div class="news-card__media news-card__media--alt media-placeholder"><img src="img/back1.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Nutra Board</span></p>
+											<div>Какие подходы в нутре перестали работать и что команды тестируют вместо них</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">73508</span>
+												<span class="stat stat--comments">141</span>
+												<span class="stat stat--likes">2634</span>
+												<div class="news-card__date">18.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="sources">
+									<div class="news-card__inner">
+										<div class="news-card__media media-placeholder"><img src="img/back.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Source Map</span></p>
+											<div>Как меняется закупка трафика в Facebook и какие связки сохраняют стабильный объём</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">69441</span>
+												<span class="stat stat--comments">118</span>
+												<span class="stat stat--likes">2148</span>
+												<div class="news-card__date">21.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="conf">
+									<div class="news-card__inner">
+										<div class="news-card__media news-card__media--alt media-placeholder"><img src="img/back2.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Combo.conf</span></p>
+											<div>Новые спикеры combo.conf и программа секции по масштабированию команд</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">58233</span>
+												<span class="stat stat--comments">96</span>
+												<span class="stat stat--likes">1879</span>
+												<div class="news-card__date">24.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<a href="" class="news-card" data-category="learning">
+									<div class="news-card__inner">
+										<div class="news-card__media media-placeholder"><img src="img/back1.webp" alt=""></div>
+										<div class="news-card__body">
+											<p class="news-card__author"><span>Learning Hub</span></p>
+											<div>Какие материалы стоит пройти новичку, чтобы быстрее зайти в медиабаинг</div>
+											<div class="news-card__stats">
+												<span class="stat stat--views">62105</span>
+												<span class="stat stat--comments">104</span>
+												<span class="stat stat--likes">1986</span>
+												<div class="news-card__date">26.02.2026</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<a href="#" class="section-more" data-news-more>... Показать ещё</a>
+						</section>
+
+
+										<section class="content-section mobile-flow-block mobile-flow-block--banner" aria-label="Блок баннера">
+											<a href="#" class="mobile-flow-block__banner">
+												<img src="img/sidebar_banner.webp" alt="Баннер Combo Media">
+											</a>
+										</section>
+										<section class="content-section mobile-flow-block mobile-flow-block--social" aria-label="Блок соцсетей">
+											<div class="mobile-flow-block__social">
+												<h3 class="mobile-flow-block__title">Следи за нами в соцсетях</h3>
+												<div class="social-card__list">
+													<a href="#" class="social-card__icon" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+													<a href="#" class="social-card__icon" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+												</div>
+											</div>
+										</section>
+						<section class="content-section">
+							<div class="section-heading">
+								<div>Наши партнеры</div>
+							</div>
+							<div class="partners-grid">
+								<div class="sponsors-wrap">
+									<div class="sponsors-inners">
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor1.png" alt="Sponsor">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor2.svg" alt="Sponsor">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor3.png" alt="Sponsor">
+										</a>
+									</div>
+									<div aria-hidden="true" class="sponsors-inners">
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor1.png" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor2.svg" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor3.png" alt="">
+										</a>
+									</div>
+									<div aria-hidden="true" class="sponsors-inners">
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor1.png" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor2.svg" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor3.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="sponsors-wrap sponsors-row2">
+									<div class="sponsors-inners">
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor1.png" alt="Sponsor">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor2.svg" alt="Sponsor">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor3.png" alt="Sponsor">
+										</a>
+									</div>
+									<div aria-hidden="true" class="sponsors-inners">
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor1.png" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor2.svg" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor3.png" alt="">
+										</a>
+									</div>
+									<div aria-hidden="true" class="sponsors-inners">
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor1.png" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor2.svg" alt="">
+										</a>
+										<a href="#" class="sponsor-item">
+											<img src="img/sponsor3.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+				</div>
+					<aside class="sidebar sidebar-right">
+						<div class="search-panel">
+							<form id="search-form" class="search-form" action="">
+								<input type="search" class="form-control" name="query" value="" maxlength="100" placeholder="Поиск" aria-required="true">
+								<button class="search-form__clear" type="button" aria-label="Очистить поиск"></button>
+							</form>
+						</div>
+
+						<div class="ad-card">
+							<a href="" class="ad-card__visual">
+								<img src="img/sidebar_banner.webp" alt="Готовые WhiteHat промо">
+							</a>
+						</div>
+
+						<a href="#" class="back-to-top" aria-label="Наверх">
+							<img src="img/arrow.svg" alt="">
+						</a>
+					</aside>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="footer-brand">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="Combo Media logo">
+					</a>
+					<div class="footer-copy">
+						<p>Combo.media © All Rights</p>
+						<p>Reserved Copyright 2026</p>
+					</div>
+				</div>
+
+				<nav class="footer-nav footer-nav--desktop">
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon4.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon4-hover.svg" alt=""></span><span>Главная</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon1.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon1-hover.svg" alt=""></span><span>Обучение</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon-hover.svg" alt=""></span><span>combo.conf</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon3.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon3-hover.svg" alt=""></span><span>Статьи</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon2.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon2-hover.svg" alt=""></span><span>Новости</span></a>
+				</nav>
+
+				<div class="footer-socials">
+					<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+					<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<nav class="footer-nav footer-nav--mobile">
+			<a href="#" class="footer-nav__center-link" aria-label="Combo.conf"><img src="img/ff.svg" alt=""></a>
+			<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon4.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon4-hover.svg" alt=""></span><span>Главная</span></a>
+			<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon1.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon1-hover.svg" alt=""></span><span>Обучение</span></a>
+			<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"></span><span>combo.conf</span></a>
+		<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon3.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon3-hover.svg" alt=""></span><span>Статьи</span></a>
+		<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon2.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon2-hover.svg" alt=""></span><span>Новости</span></a>
+	</nav>
+</div>
+
+<div class="overlay"></div>
+
+<div class="modal" id="modal-search">
+	<div class="modal_main">
+		<div class="modal_wrapper">
+			<div class="modal_body">
+				<div class="search-wrapper">
+					<div class="search-box">
+						<form id="search-form-modal" class="search-form" action="">
+							<input type="search" class="form-control" name="query" value="" maxlength="100" placeholder="Поиск" aria-required="true">
+							<button class="search-form__clear" type="button" aria-label="Очистить поиск"></button>
+						</form>
+						<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+					</div>
+					<div class="search-results">
+						<div class="search-result-item">
+							<h3>Интенсив по нутре от combo.conf</h3>
+							<p>Старый поиск возвращён как UI-блок. Подключение логики поиска можно будет доделать отдельно.</p>
+						</div>
+						<div class="search-result-item">
+							<h3>Как заливать трафик с нативных сетей</h3>
+							<p>Быстрый доступ к материалам, новостям и карточкам внутри контентной части.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="sign_in_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-lg">
+		<div class="modal_wrapper auth-modal auth-modal--large">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__layout">
+				<div class="auth-modal__content">
+					<p class="modal_title auth-modal__title">Вход</p>
+					<div class="auth-modal__socials">
+						<a href="#" class="auth-social auth-social--tg" aria-label="Telegram"><img src="img/soc.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--google" aria-label="Google"><img src="img/soc1.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--facebook" aria-label="Facebook"><img src="img/soc2.svg" alt=""></a>
+					</div>
+					<form action="" method="" class="form-modal auth-form">
+						<div class="form-modal_groups">
+							<div class="form-group">
+								<input name="login" placeholder="Ваше имя" type="text">
+							</div>
+							<div class="form-group">
+								<input name="password" id="login-password" placeholder="Ваш пароль" type="password">
+								<span class="toggle-password" data-target="login-password"></span>
+							</div>
+							<div class="form-group form-group-btn">
+								<button type="submit" class="btn auth-btn auth-btn--light">Войти</button>
+							</div>
+							<a href="#" class="auth-form__sub-link" data-open-modal="#reset_password_modal">Забыли пароль?</a>
+							<p class="tt">Нет аккаунта?</p>
+							<a href="#" class="btn btn--gradient auth-btn form_sign_up">Регистрация</a>
+						</div>
+					</form>
+					<div class="auth-modal__footer">
+						<div class="auth-modal__copy">
+							<p>Combo.media © 2026</p>
+							<p>All rights reserved</p>
+						</div>
+						<div class="auth-modal__icons">
+							<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+							<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="auth-modal__visual">
+					<img src="img/modal1.webp" alt="Вход Combo.media">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="sign_up_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-lg">
+		<div class="modal_wrapper auth-modal auth-modal--large">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__layout">
+				<div class="auth-modal__content">
+					<p class="modal_title auth-modal__title">Регистрация</p>
+					<div class="auth-modal__socials">
+						<a href="#" class="auth-social auth-social--tg" aria-label="Telegram"><img src="img/soc.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--google" aria-label="Google"><img src="img/soc1.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--facebook" aria-label="Facebook"><img src="img/soc2.svg" alt=""></a>
+					</div>
+					<form action="" method="" class="form-modal auth-form">
+						<div class="form-modal_groups">
+							<div class="form-group">
+								<input name="email" placeholder="Ваша почта" type="email">
+								<span class="required-mark" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="nickname" placeholder="Ваше имя" type="text">
+								<span class="required-mark" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="password" id="signup-password" placeholder="Установите пароль" type="password">
+								<span class="toggle-password" data-target="signup-password"></span>
+								<span class="required-mark required-mark--password" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="repeat-password" id="signup-repeat-password" placeholder="Повторите пароль" type="password">
+								<span class="toggle-password" data-target="signup-repeat-password"></span>
+								<span class="required-mark required-mark--password" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="telegram" placeholder="Ваш Telegram" type="text">
+							</div>
+							<div class="form-group form-group-check">
+								<div class="check">
+									<div class="check-in">
+										<input id="termsCheck" type="checkbox" name="terms_check">
+										<label for="termsCheck">
+											<span class="check-copy"></span>
+											<span>Я согласен (-на) с <a href="#">Условиями и положениями</a><br>и подтверждаю, что мне исполнилось 18 лет</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group form-group-btn">
+								<button type="submit" class="btn btn--gradient auth-btn">Регистрация</button>
+							</div>
+							<p class="tt">Уже есть аккаунт?</p>
+							<a href="#" class="btn auth-btn auth-btn--light form_sign_in">Войти</a>
+						</div>
+					</form>
+					<div class="auth-modal__footer">
+						<div class="auth-modal__copy">
+							<p>Combo.media © 2026</p>
+							<p>All rights reserved</p>
+						</div>
+						<div class="auth-modal__icons">
+							<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+							<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="auth-modal__visual">
+					<img src="img/modal.webp" alt="Регистрация Combo.media">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="reset_password_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-sm">
+		<div class="modal_wrapper auth-modal auth-modal--small">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__content auth-modal__content--single">
+				<p class="modal_title auth-modal__title">Восстановление пароля</p>
+				<p class="auth-modal__description">Укажите вашу почту и мы вышлем новый пароль</p>
+				<form action="" method="" class="form-modal auth-form reset-password-form">
+					<div class="form-modal_groups">
+						<div class="form-group">
+							<input name="reset-email" placeholder="Ваша почта" type="email">
+						</div>
+						<div class="form-group form-group-btn">
+							<button type="button" class="btn auth-btn auth-btn--light form_sign_in">Войти</button>
+						</div>
+						<div class="form-group form-group-btn">
+							<button type="submit" class="btn btn--gradient auth-btn">Регистрация</button>
+						</div>
+					</div>
+				</form>
+				<div class="auth-modal__footer auth-modal__footer--single">
+					<div class="auth-modal__copy">
+						<p>Combo.media © 2026</p>
+						<p>All rights reserved</p>
+					</div>
+					<div class="auth-modal__icons">
+						<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+						<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="reset_password_success_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-sm">
+		<div class="modal_wrapper auth-modal auth-modal--small">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__content auth-modal__content--single auth-modal__content--compact">
+				<p class="modal_title auth-modal__title">Отправили пароль<br>на вашу электронную<br>почту</p>
+				<div class="form-group form-group-btn">
+					<button type="button" class="btn auth-btn auth-btn--light" data-close-modal>Хорошо, спасибо</button>
+				</div>
+				<div class="auth-modal__footer auth-modal__footer--single">
+					<div class="auth-modal__copy">
+						<p>Combo.media © 2026</p>
+						<p>All rights reserved</p>
+					</div>
+					<div class="auth-modal__icons">
+						<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+						<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

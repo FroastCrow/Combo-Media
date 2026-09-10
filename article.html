@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Article</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/swiper-bundle.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-content">
+	<section class="hero-top">
+		<div class="hero-banner">
+			<div class="hero-banner__placeholder" style="background-image: url('img/card1.webp'); background-size: cover; background-position: center;"></div>
+		</div>
+
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="Combo Media logo">
+					</a>
+
+					<div class="overlay_top">
+						<div class="overlay_scroll">
+							<div class="only-mobile">
+								<div class="block-top-mob">
+									<a href="#" class="logo">
+										<img src="img/logo.svg" alt="Combo Media logo">
+									</a>
+									<div class="mob-icons-inners">
+										<button class="mob-icon mob-close" type="button" aria-label="Закрыть меню"></button>
+									</div>
+								</div>
+							</div>
+
+							<div class="header-links">
+								<a href="#" class="btn btn-dark form_sign_in">Вход</a>
+								<a href="#" class="btn btn--gradient form_sign_up">Регистрация</a>
+							</div>
+
+							<div class="auth-modal__footer auth-modal__footer--single header-popup-footer">
+								<div class="auth-modal__copy">
+									<p>Combo.media © 2026</p>
+									<p>All rights reserved</p>
+								</div>
+								<div class="auth-modal__icons">
+									<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+									<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-actions">
+						<button type="button" class="header-search-toggle modal-search" aria-label="Открыть поиск"></button>
+						<button type="button" id="menu-toggle" aria-label="Открыть меню">
+							<span id="hamburger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="top-cta">
+			<div class="container">
+				<div class="top-cta__box">
+					<p class="top-cta__text"><span class="top-cta__lead">COMBO.CONF</span> УЖЕ СЕГОДНЯ</p>
+					<a href="#" class="btn btn--gradient top-cta__btn form_sign_up">Регистрация</a>
+					<button class="top-cta__close" type="button" aria-label="Закрыть плашку"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="ticker">
+			<div class="container">
+				<div class="ticker__slider">
+					<div class="ticker__track">
+						<div class="ticker__group">
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+							<a href="#" class="ticker__item">
+								<div class="ticker__item-inner">
+									<img class="ticker__icon" src="img/flag.svg" alt="">
+									<span class="ticker__text">UG • OfferSee • <span class="ticker__accent">Варикоз</span></span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="main-wrapper">
+		<section class="main">
+			<div class="container">
+				<div class="content-layout">
+					<aside class="sidebar sidebar-left">
+						<nav class="side-menu">
+							<a href="#" class="side-menu__item side-menu__item--active side-menu__item--home"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon4.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon4-hover.svg" alt=""></span><span>Главная</span></a>
+							<a href="#" class="side-menu__item side-menu__item--news"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon2.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon2-hover.svg" alt=""></span><span>Новости</span></a>
+							<a href="#" class="side-menu__item side-menu__item--learn"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon1.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon1-hover.svg" alt=""></span><span>Обучение</span></a>
+							<a href="#" class="side-menu__item side-menu__item--conf"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon-hover.svg" alt=""></span><span>Combo.conf</span></a>
+							<a href="#" class="side-menu__item side-menu__item--articles"><span class="side-menu__icon-wrap"><img class="side-menu__icon side-menu__icon--default" src="img/menuIcon3.svg" alt=""><img class="side-menu__icon side-menu__icon--hover" src="img/menuIcon3-hover.svg" alt=""></span><span>Статьи</span></a>
+						</nav>
+
+						<div class="social-card">
+							<h3 class="social-card__title">Следи за нами в соцсетях</h3>
+							<div class="social-card__list">
+								<a href="#" class="social-card__icon" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+								<a href="#" class="social-card__icon" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+							</div>
+							<div class="social-card__copy">
+								<p>Combo.media</p>
+								<p>© All Rights Reserved</p>
+								<p>Copyright 2026</p>
+							</div>
+						</div>
+					</aside>
+
+					<div class="content-center article">
+							<section class="article-entry__header">
+								<h1>Заголовок статьи о том, что это статья про статью а не просто так знаете ли</h1>
+								<div class="article-entry__meta" aria-label="Метаданные статьи">
+									<span class="article-entry__meta-item">
+										<img src="img/Shape1.svg" alt="">
+										170879
+									</span>
+									<span class="article-entry__meta-item">
+										<img src="img/icon1.svg" alt="">
+										1378
+									</span>
+									<span class="article-entry__meta-item">
+										<img src="img/icon2.svg" alt="">
+										11069
+									</span>
+									<span class="article-entry__meta-item">12.01.2026</span>
+								</div>
+							</section>
+
+							<section class="article-entry__media">
+								<img src="img/back2.webp" alt="Обложка статьи">
+							</section>
+
+							<section class="text-block">
+								<p>История, произошедшая с командой Ace Partners, показывает, как один невыплаченный долг вскрывает целую цепочку проблем, где виноваты все. От инвесторов-призраков до крупных игроков рынка.</p>
+								<p>Мы восстановили хронологию событий по перепискам и документам, чтобы показать, как закрылся проект NGR Partners и какую роль в этом сыграла ПП СЗРА.</p>
+								<h2>Идеальное начало</h2>
+								<p>В июне 2025 года команда Ace Partners начала работу с ресейл-партнеркой NGR Partners. Лили на оффер Malina Casino – FB, Ios, Android, PWA (ES).</p>
+							</section>
+
+						<section class="article-entry__media">
+							<img src="img/back2.webp" alt="Обложка статьи">
+						</section>
+
+						<section class="article-entry__caption">
+							<p>Подпись к картинке</p>
+						</section>
+
+						<section class="text-block">
+							<h2>Идеальное начало</h2>
+							<p>В июне 2025 года команда Ace Partners начала работу с ресейл-партнеркой NGR Partners. Лили на оффер Malina Casino – FB, Ios, Android, PWA (ES).</p>
+						</section>
+
+							<section class="quotes">
+							<blockquote class="article-quote article-quote--light">
+								<div>«Я – заголовок-цитата, у меня нет фотографий и ничего»</div>
+								<a href="">Ксения Русакова, великий мыслитель</a>
+							</blockquote>
+
+							<blockquote class="article-quote article-quote--accent">
+								<div>«Я – заголовок-цитата, у меня нет фотографий и ничего»</div>
+								<a href="">Ксения Русакова, великий мыслитель</a>
+							</blockquote>
+
+							<blockquote class="article-quote article-quote--dark">
+								<div>«Я – заголовок-цитата, у меня нет фотографий и ничего»</div>
+								<a href="">Ксения Русакова, великий мыслитель</a>
+							</blockquote>
+							</section>
+
+						<section class="text-block">
+							<p>История, произошедшая с командой Ace Partners, показывает, как один невыплаченный долг вскрывает целую цепочку проблем, где виноваты все. От инвесторов-призраков до крупных игроков рынка.</p>
+							<p>Мы восстановили хронологию событий по перепискам и документам, чтобы показать, как закрылся проект NGR Partners и какую роль в этом сыграла ПП СЗРА.</p>
+						</section>
+
+						<section class="note">
+						<div class="article-note">
+								<div class="article-note__thumb">
+									<img src="img/card-img4.webp" alt="">
+								</div>
+								<div class="article-note__content">
+									<div class="article-note-title">А я – <a href>элемент визуализации</a> со скругленными углами, без курсивов, с возможностью настраивать жирный шрифт и ссылки</div>
+									<a href="">Ксения Русакова, великий мыслитель</a>
+									<div class="article-note__socials" aria-label="Социальные ссылки">
+										<a href="#" class="article-note__social" aria-label="Instagram">
+											<img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt="">
+											<img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt="">
+										</a>
+										<a href="#" class="article-note__social" aria-label="Telegram">
+											<img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt="">
+											<img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt="">
+										</a>
+									</div>
+								</div>
+						</div>
+
+							<div class="article-note">
+								<div class="article-note__content">
+									<div class="article-note-title">А я – элемент визуализации со скругленными углами, без курсивов, с возможностью настраивать жирный шрифт и ссылки</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="text-block">
+								<p>А теперь нужны еще списки. Ненумерованные:</p>
+								<ul>
+									<li>Раз</li>
+									<li>Два</li>
+									<li>Три</li>
+									<li>Пять</li>
+								</ul>
+
+								<p>И нумерованные:</p>
+								<ol>
+									<li>Два</li>
+									<li>Три</li>
+									<li>Шесть</li>
+									<li>Восемь</li>
+								</ol>
+						</section>
+
+						<section class="content-section">
+							<div class="watch-box" data-watch-box>
+								<div class="watch-box__screen">
+									<div class="watch-box__video media-placeholder media-placeholder--video">
+										<video class="watch-box__video-player" data-watch-video preload="metadata" playsinline src="img/video.mp4"></video>
+									</div>
+									<button class="watch-box__play" type="button" aria-label="Смотреть видео" data-watch-play>
+										<img src="img/arrow3.svg" alt="">
+									</button>
+								</div>
+							</div>
+						</section>
+
+						<section class="text-block">
+							<div class="table-wrap">
+								<table>
+									<thead>
+										<tr>
+											<th>Заголовок</th>
+											<th>Заголовок</th>
+											<th>Заголовок</th>
+											<th>Заголовок</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+										</tr>
+										<tr>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+										</tr>
+										<tr>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+											<td>Текст текста</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>История, произошедшая с командой Ace Partners, показывает, как один невыплаченный долг вскрывает целую цепочку проблем, где виноваты все. От инвесторов-призраков до крупных игроков рынка. Мы восстановили хронологию событий по перепискам и документам, чтобы показать, как закрылся проект NGR Partners и какую роль в этом сыграла ПП C3PA.</p>
+						</section>
+
+						<section class="article-link-card">
+							<div class="article-link-card__media">
+								<img src="img/card-img4.webp" alt="Превью статьи">
+							</div>
+							<div class="article-link-card__content">
+								<div class="article-link-card__title">Заголовок статьи о том, что это статья про статью а не просто так знаете ли</div>
+								<div class="article-entry__meta" aria-label="Метаданные статьи">
+									<span class="article-entry__meta-item">
+										<img src="img/icon.svg" alt="">
+										170879
+									</span>
+									<span class="article-entry__meta-item">
+										<img src="img/icon1.svg" alt="">
+										1378
+									</span>
+									<span class="article-entry__meta-item">
+										<img src="img/icon2.svg" alt="">
+										11069
+									</span>
+									<span class="article-entry__meta-item">12.01.2026</span>
+								</div>
+							</div>
+						</section>
+
+						<section class="content-section">
+							<div class="section-heading">
+								<div>Интересное по теме</div>
+							</div>
+							<div class="materials-slider" data-materials-slider>
+								<div class="materials-slider__viewport swiper">
+									<div class="materials-slider__track swiper-wrapper">
+										<a href="#" class="materials-slide materials-slide--featured swiper-slide">
+											<div class="materials-slide__media materials-slide__media--featured">
+												<img src="img/card1.webp" alt="Лучшие материалы" class="materials-slide__image">
+											</div>
+											<div class="materials-slide__body">
+												<div class="materials-slide__title">Конкурс от combo.media</div>
+												<p>Верификация и $500 на баланс MGID</p>
+												<div class="article-entry__meta" aria-label="Метаданные статьи">
+									<span class="article-entry__meta-item">
+										<img src="img/icon.svg" alt="">
+										170879
+									</span>
+													<span class="article-entry__meta-item">
+										<img src="img/icon1.svg" alt="">
+										1378
+									</span>
+													<span class="article-entry__meta-item">
+										<img src="img/icon2.svg" alt="">
+										11069
+									</span>
+													<span class="article-entry__meta-item">12.01.2026</span>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="materials-slide swiper-slide">
+											<div class="materials-slide__media materials-slide__media--featured">
+												<img src="img/card.webp" alt="Лучшие материалы" class="materials-slide__image">
+											</div>
+											<div class="materials-slide__body">
+												<div class="materials-slide__title">Интенсив по нутре от combo.conf</div>
+												<div class="article-entry__meta" aria-label="Метаданные статьи">
+									<span class="article-entry__meta-item">
+										<img src="img/icon.svg" alt="">
+										170879
+									</span>
+													<span class="article-entry__meta-item">
+										<img src="img/icon1.svg" alt="">
+										1378
+									</span>
+													<span class="article-entry__meta-item">
+										<img src="img/icon2.svg" alt="">
+										11069
+									</span>
+													<span class="article-entry__meta-item">12.01.2026</span>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="materials-slide swiper-slide">
+											<div class="materials-slide__media materials-slide__media--featured">
+												<img src="img/card.webp" alt="Лучшие материалы" class="materials-slide__image">
+											</div>
+											<div class="materials-slide__body">
+												<div class="materials-slide__title">Интенсив по нутре от combo.conf</div>
+												<div class="article-entry__meta" aria-label="Метаданные статьи">
+									<span class="article-entry__meta-item">
+										<img src="img/icon.svg" alt="">
+										170879
+									</span>
+													<span class="article-entry__meta-item">
+										<img src="img/icon1.svg" alt="">
+										1378
+									</span>
+													<span class="article-entry__meta-item">
+										<img src="img/icon2.svg" alt="">
+										11069
+									</span>
+													<span class="article-entry__meta-item">12.01.2026</span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<button type="button" class="materials-slider__prev" aria-label="Предыдущий слайд">
+									<img src="img/arrow.svg" alt="">
+								</button>
+								<button type="button" class="materials-slider__next" aria-label="Следующий слайд">
+									<img src="img/arrow.svg" alt="">
+								</button>
+							</div>
+						</section>
+
+						<section class="article-comments">
+							<div class="article-comments__editor">
+								<textarea class="article-comments__textarea" placeholder="Ваш ответ"></textarea>
+								<p class="article-comments__hint">Комментарии проходят модерацию по <a href="#">правилам combo.media</a></p>
+								<button type="button" class="btn btn--gradient article-comments__submit">Отправить</button>
+							</div>
+
+							<div class="article-comments__head">
+								<div class="article-comments__count">
+									<img src="img/icon1.svg" alt="">
+									<span>4</span>
+								</div>
+								<div class="article-comments__sort" data-comments-sort>
+									<button type="button" class="article-comments__sort-toggle" aria-haspopup="listbox" aria-expanded="false">
+										<span class="article-comments__sort-value">Высокий рейтинг</span>
+									</button>
+									<div class="article-comments__sort-menu" role="listbox" aria-label="Сортировка комментариев">
+										<button type="button" class="article-comments__sort-item is-active" role="option" aria-selected="true">Высокий рейтинг</button>
+										<button type="button" class="article-comments__sort-item" role="option" aria-selected="false">Низкий рейтинг</button>
+										<button type="button" class="article-comments__sort-item" role="option" aria-selected="false">Сначала новые</button>
+										<button type="button" class="article-comments__sort-item" role="option" aria-selected="false">Сначала старые</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="article-comments__list">
+								<div class="article-comment-thread">
+								<div class="article-comment">
+									<div class="article-comment__author">
+										<div class="article-comment__avatar">
+											<img src="img/item1.webp" alt="Аватар пользователя">
+										</div>
+										<div class="article-comment__name">toptyzhkatyan09</div>
+									</div>
+									<div class="article-comment__date">24.08.2024</div>
+									<div class="article-comment__text">И теперь работает head of affiliate.</div>
+									<div class="article-comment__foot">
+										<a href="#" class="article-comment__reply">Ответить</a>
+										<div class="article-comment__rate article-comment__rate--plus">
+											<img src="img/like.svg" alt="">
+											<span>4</span>
+											<img class="article-comment__rate-icon--reverse" src="img/like.svg" alt="">
+										</div>
+									</div>
+								</div>
+								</div>
+
+								<div class="article-comment-thread">
+									<div class="article-comment">
+										<div class="article-comment__author">
+											<div class="article-comment__avatar">
+												<img src="img/item1.webp" alt="Аватар пользователя">
+											</div>
+											<div class="article-comment__name">reeper1988</div>
+										</div>
+										<div class="article-comment__date">24.08.2024</div>
+										<div class="article-comment__text">А пока она становится байером, меняет команды, работает с товаркой и нутрой, льет на FB меняет команды, работает с товаркой и нутрой, льет на FB меняет команды, работает с товаркой и нутрой, льет на FB меняет команды, работает с товаркой и нутрой, льет на FB</div>
+										<div class="article-comment__foot">
+											<a href="#" class="article-comment__reply">Ответить</a>
+											<div class="article-comment__rate article-comment__rate--minus">
+												<img src="img/like.svg" alt="">
+												<span>-11</span>
+												<img class="article-comment__rate-icon--reverse" src="img/like.svg" alt="">
+											</div>
+										</div>
+									</div>
+
+									<article class="article-comment article-comment--reply">
+										<div class="article-comment__author">
+											<div class="article-comment__avatar">
+												<img src="img/item1.webp" alt="Аватар пользователя">
+											</div>
+											<div class="article-comment__name">VAs9IH</div>
+										</div>
+										<div class="article-comment__date">24.08.2024</div>
+										<div class="article-comment__text">А пока она становится байером, меняет команды, работает с товаркой и нутрой, льет на FB байером, меняет команды, работает с товаркой и нутрой, льет на FB</div>
+										<div class="article-comment__foot">
+											<a href="#" class="article-comment__reply">Ответить</a>
+											<div class="article-comment__rate">
+												<img src="img/like.svg" alt="">
+												<span>0</span>
+												<img class="article-comment__rate-icon--reverse" src="img/like.svg" alt="">
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</section>
+
+
+
+						<section class="content-section mobile-flow-block mobile-flow-block--banner" aria-label="Блок баннера">
+							<a href="#" class="mobile-flow-block__banner">
+								<img src="img/sidebar_banner.webp" alt="Баннер Combo Media">
+							</a>
+						</section>
+						<section class="content-section mobile-flow-block mobile-flow-block--social" aria-label="Блок соцсетей">
+							<div class="mobile-flow-block__social">
+								<h3 class="mobile-flow-block__title">Следи за нами в соцсетях</h3>
+								<div class="social-card__list">
+									<a href="#" class="social-card__icon" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+									<a href="#" class="social-card__icon" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+								</div>
+							</div>
+						</section>
+
+
+
+				</div>
+					<aside class="sidebar sidebar-right">
+						<div class="search-panel">
+							<form id="search-form" class="search-form" action="">
+								<input type="search" class="form-control" name="query" value="" maxlength="100" placeholder="Поиск" aria-required="true">
+								<button class="search-form__clear" type="button" aria-label="Очистить поиск"></button>
+							</form>
+						</div>
+
+						<div class="ad-card">
+							<a href="" class="ad-card__visual">
+								<img src="img/sidebar_banner.webp" alt="Готовые WhiteHat промо">
+							</a>
+						</div>
+
+						<a href="#" class="back-to-top" aria-label="Наверх">
+							<img src="img/arrow.svg" alt="">
+						</a>
+					</aside>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="footer-brand">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="Combo Media logo">
+					</a>
+					<div class="footer-copy">
+						<p>Combo.media © All Rights</p>
+						<p>Reserved Copyright 2026</p>
+					</div>
+				</div>
+
+				<nav class="footer-nav footer-nav--desktop">
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon4.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon4-hover.svg" alt=""></span><span>Главная</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon1.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon1-hover.svg" alt=""></span><span>Обучение</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon-hover.svg" alt=""></span><span>combo.conf</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon3.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon3-hover.svg" alt=""></span><span>Статьи</span></a>
+					<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon2.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon2-hover.svg" alt=""></span><span>Новости</span></a>
+				</nav>
+
+				<div class="footer-socials">
+					<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+					<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<nav class="footer-nav footer-nav--mobile">
+			<a href="#" class="footer-nav__center-link" aria-label="Combo.conf"><img src="img/ff.svg" alt=""></a>
+			<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon4.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon4-hover.svg" alt=""></span><span>Главная</span></a>
+			<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon1.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon1-hover.svg" alt=""></span><span>Обучение</span></a>
+			<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"></span><span>combo.conf</span></a>
+		<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon3.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon3-hover.svg" alt=""></span><span>Статьи</span></a>
+		<a href="#" class="footer-nav__item"><span class="footer-nav__icon-wrap"><img class="footer-nav__icon footer-nav__icon--default" src="img/menuIcon2.svg" alt=""><img class="footer-nav__icon footer-nav__icon--hover" src="img/menuIcon2-hover.svg" alt=""></span><span>Новости</span></a>
+	</nav>
+</div>
+
+<div class="overlay"></div>
+
+<div class="modal" id="modal-search">
+	<div class="modal_main">
+		<div class="modal_wrapper">
+			<div class="modal_body">
+				<div class="search-wrapper">
+					<div class="search-box">
+						<form id="search-form-modal" class="search-form" action="">
+							<input type="search" class="form-control" name="query" value="" maxlength="100" placeholder="Поиск" aria-required="true">
+							<button class="search-form__clear" type="button" aria-label="Очистить поиск"></button>
+						</form>
+						<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+					</div>
+					<div class="search-results">
+						<div class="search-result-item">
+							<h3>Интенсив по нутре от combo.conf</h3>
+							<p>Старый поиск возвращён как UI-блок. Подключение логики поиска можно будет доделать отдельно.</p>
+						</div>
+						<div class="search-result-item">
+							<h3>Как заливать трафик с нативных сетей</h3>
+							<p>Быстрый доступ к материалам, новостям и карточкам внутри контентной части.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="sign_in_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-lg">
+		<div class="modal_wrapper auth-modal auth-modal--large">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__layout">
+				<div class="auth-modal__content">
+					<p class="modal_title auth-modal__title">Вход</p>
+					<div class="auth-modal__socials">
+						<a href="#" class="auth-social auth-social--tg" aria-label="Telegram"><img src="img/soc.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--google" aria-label="Google"><img src="img/soc1.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--facebook" aria-label="Facebook"><img src="img/soc2.svg" alt=""></a>
+					</div>
+					<form action="" method="" class="form-modal auth-form">
+						<div class="form-modal_groups">
+							<div class="form-group">
+								<input name="login" placeholder="Ваше имя" type="text">
+							</div>
+							<div class="form-group">
+								<input name="password" id="login-password" placeholder="Ваш пароль" type="password">
+								<span class="toggle-password" data-target="login-password"></span>
+							</div>
+							<div class="form-group form-group-btn">
+								<button type="submit" class="btn auth-btn auth-btn--light">Войти</button>
+							</div>
+							<a href="#" class="auth-form__sub-link" data-open-modal="#reset_password_modal">Забыли пароль?</a>
+							<p class="tt">Нет аккаунта?</p>
+							<a href="#" class="btn btn--gradient auth-btn form_sign_up">Регистрация</a>
+						</div>
+					</form>
+					<div class="auth-modal__footer">
+						<div class="auth-modal__copy">
+							<p>Combo.media © 2026</p>
+							<p>All rights reserved</p>
+						</div>
+						<div class="auth-modal__icons">
+							<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+							<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="auth-modal__visual">
+					<img src="img/modal1.webp" alt="Вход Combo.media">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="sign_up_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-lg">
+		<div class="modal_wrapper auth-modal auth-modal--large">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__layout">
+				<div class="auth-modal__content">
+					<p class="modal_title auth-modal__title">Регистрация</p>
+					<div class="auth-modal__socials">
+						<a href="#" class="auth-social auth-social--tg" aria-label="Telegram"><img src="img/soc.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--google" aria-label="Google"><img src="img/soc1.svg" alt=""></a>
+						<a href="#" class="auth-social auth-social--facebook" aria-label="Facebook"><img src="img/soc2.svg" alt=""></a>
+					</div>
+					<form action="" method="" class="form-modal auth-form">
+						<div class="form-modal_groups">
+							<div class="form-group">
+								<input name="email" placeholder="Ваша почта" type="email">
+								<span class="required-mark" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="nickname" placeholder="Ваше имя" type="text">
+								<span class="required-mark" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="password" id="signup-password" placeholder="Установите пароль" type="password">
+								<span class="toggle-password" data-target="signup-password"></span>
+								<span class="required-mark required-mark--password" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="repeat-password" id="signup-repeat-password" placeholder="Повторите пароль" type="password">
+								<span class="toggle-password" data-target="signup-repeat-password"></span>
+								<span class="required-mark required-mark--password" aria-hidden="true">*</span>
+							</div>
+							<div class="form-group">
+								<input name="telegram" placeholder="Ваш Telegram" type="text">
+							</div>
+							<div class="form-group form-group-check">
+								<div class="check">
+									<div class="check-in">
+										<input id="termsCheck" type="checkbox" name="terms_check">
+										<label for="termsCheck">
+											<span class="check-copy"></span>
+											<span>Я согласен (-на) с <a href="#">Условиями и положениями</a><br>и подтверждаю, что мне исполнилось 18 лет</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group form-group-btn">
+								<button type="submit" class="btn btn--gradient auth-btn">Регистрация</button>
+							</div>
+							<p class="tt">Уже есть аккаунт?</p>
+							<a href="#" class="btn auth-btn auth-btn--light form_sign_in">Войти</a>
+						</div>
+					</form>
+					<div class="auth-modal__footer">
+						<div class="auth-modal__copy">
+							<p>Combo.media © 2026</p>
+							<p>All rights reserved</p>
+						</div>
+						<div class="auth-modal__icons">
+							<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+							<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="auth-modal__visual">
+					<img src="img/modal.webp" alt="Регистрация Combo.media">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="reset_password_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-sm">
+		<div class="modal_wrapper auth-modal auth-modal--small">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__content auth-modal__content--single">
+				<p class="modal_title auth-modal__title">Восстановление пароля</p>
+				<p class="auth-modal__description">Укажите вашу почту и мы вышлем новый пароль</p>
+				<form action="" method="" class="form-modal auth-form reset-password-form">
+					<div class="form-modal_groups">
+						<div class="form-group">
+							<input name="reset-email" placeholder="Ваша почта" type="email">
+						</div>
+						<div class="form-group form-group-btn">
+							<button type="button" class="btn auth-btn auth-btn--light form_sign_in">Войти</button>
+						</div>
+						<div class="form-group form-group-btn">
+							<button type="submit" class="btn btn--gradient auth-btn">Регистрация</button>
+						</div>
+					</div>
+				</form>
+				<div class="auth-modal__footer auth-modal__footer--single">
+					<div class="auth-modal__copy">
+						<p>Combo.media © 2026</p>
+						<p>All rights reserved</p>
+					</div>
+					<div class="auth-modal__icons">
+						<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+						<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="reset_password_success_modal">
+	<div class="modal_main modal_main--auth modal_main--auth-sm">
+		<div class="modal_wrapper auth-modal auth-modal--small">
+			<button class="modal_close auth-modal__close" type="button" aria-label="Закрыть">×</button>
+			<div class="auth-modal__content auth-modal__content--single auth-modal__content--compact">
+				<p class="modal_title auth-modal__title">Отправили пароль<br>на вашу электронную<br>почту</p>
+				<div class="form-group form-group-btn">
+					<button type="button" class="btn auth-btn auth-btn--light" data-close-modal>Хорошо, спасибо</button>
+				</div>
+				<div class="auth-modal__footer auth-modal__footer--single">
+					<div class="auth-modal__copy">
+						<p>Combo.media © 2026</p>
+						<p>All rights reserved</p>
+					</div>
+					<div class="auth-modal__icons">
+						<a href="#" class="footer-socials__item" aria-label="Instagram"><img class="social-card__icon-image social-card__icon-image--default" src="img/inst-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/inst-hover.svg" alt=""></a>
+						<a href="#" class="footer-socials__item" aria-label="Telegram"><img class="social-card__icon-image social-card__icon-image--default" src="img/tg-footer.svg" alt=""><img class="social-card__icon-image social-card__icon-image--hover" src="img/tg-hover.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
